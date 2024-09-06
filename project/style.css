@@ -1,0 +1,224 @@
+.container {
+    margin-top: 75px;
+}
+
+.section {
+  /* Arka plan rengi */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgelik */
+}
+
+.square-img {
+    width: 75%;
+    height: 100px;
+    height: auto;
+    margin-left: 25px;
+    object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 30px;
+    
+}
+
+
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#circle-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.col-4, .col-8 {
+    padding: 0; /* İç boşlukları kaldırarak tam hizalamayı sağlar */
+}
+
+#isim{
+    color: white;
+   
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration-style: dotted;
+    text-align: center;
+}
+
+#isim2{
+    color: white;
+   
+    text-align: center;
+    font-style: italic;
+}
+#Hakkimda{
+    margin-top: 25px;
+    padding-left: 75px;
+    
+
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    text-decoration-style: dotted;
+    text-align: center;
+}
+
+#paragraf{
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 15px;
+    text-indent: 30px;
+
+}
+
+#soz{
+    font-size: 25px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    text-decoration-style: dotted;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+#kartlar{
+    margin-top: 125px;
+    margin-bottom: 75px;
+    padding-left: 7%;
+    padding-right: 5%;
+}
+
+
+
+
+#card{
+    margin-top:20px;
+    height: 400px;
+    position: relative;
+    overflow: hidden; /* Kartın içeriğinin taşmasını engeller */
+    cursor: pointer; /* Mouse imlecini pointer yapar */
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    transition: transform 0.8s ease; opacity: 0.8s ease;
+    width: 100%;
+}
+
+
+
+
+.card-body {
+    display: none;
+    border-radius: 5px;
+}
+
+.card:hover .card-img-top {
+    transform: translateY(-40%); /* Resmi yukarı kaydırır */
+    opacity: 0;
+}
+
+.card:hover .card-body {
+    display: block; /* Fare kartın üzerine geldiğinde yazılar görünsün */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2e33; /* Arkaplanın karanlık olmasını sağlayın */
+    color: white; /* Yazıların beyaz olmasını sağlayın */
+    padding: 10px;
+    z-index: 2;}
+
+
+#kart{
+    
+    height: 400px;
+}
+
+#kart2{
+    
+    height: 400px;
+}
+
+#kart3{
+    
+    
+    height: 400px;
+
+}
+
+#kartImg{
+    height: 100%;
+    width: 100%;
+}
+#kartImg2{
+    height: 100%;
+    width: 100%;
+}
+#kartImg3{
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 200px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #343a40;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #343a40;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #343a40;
+}
+
+/* Firefox için scrollbar */
+html {
+    scrollbar-width: 25px;
+    scrollbar-color: #343a40 #f1f1f1;
+}
+
+/* İçerik alanını büyütmek için */
+.content {
+    height: 150px;
+    overflow: auto;
+    border: 50px solid #ddd;
+}
+
+body.light-mode {
+    background-color: #f8f9fa; /* Aydınlık tema arka plan rengi */
+    color: #212529; /* Aydınlık tema yazı rengi */
+  }
+  
+body.dark-mode {
+    background-color: #212529; /* Karanlık tema arka plan rengi */
+    color: #f8f9fa; /* Karanlık tema yazı rengi */
+  }
+
+  .navbar.dark-mode {
+    background-color: #343a40;
+  }
+  
+  .navbar.light-mode {
+    background-color: #e3f2fd;
+  }
+  
+  /* Diğer öğeler için de karanlık ve aydınlık mod stillerini tanımla */
+  
+
